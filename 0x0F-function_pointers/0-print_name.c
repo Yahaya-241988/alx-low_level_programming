@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "function_pointers.h"
 
 /**
@@ -23,13 +22,6 @@ void print_name(char *name, void (*f)(char *))
 
 void print(char *name)
 {
-	int i = 0;
+	printf("%s\n", name);
 
-	while (name[i] != '\0')
-{
-		_putchar(name[i]);
-		i++;
-}
-
-	_putchar('\n');
 }
